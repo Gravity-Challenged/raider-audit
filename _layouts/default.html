@@ -22,13 +22,13 @@
 
     <section>
       <div id="title">
-        <h2>Logs currently being evaluated</h2>
+        <h2>Evaluations</h2>
         <hr>
         <div id="player_list">
           <ul>
             {% for post in site.posts %}
             <li>
-              <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</a>
+              <a href="/raider-audit/{{ post.url }}">{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</a>
             </li>
             {% endfor %}
           </ul>
